@@ -18,6 +18,7 @@ else:
     else : 
      print(age3)
 '''
+
 #2 Write a program that will convert celsius value to fahrenheit
 '''
 celsius = int(input("Enter the temperature in celsius : "))
@@ -28,6 +29,7 @@ Fahrenheit = (celsius * (9/5))+32
 
 print(f"{Fahrenheit} degree fahrenheit")
 '''
+
 #3 User will input (2numbers).Write a program to swap the numbers
 '''
 no1 = int(input("enter the first number: "))
@@ -36,6 +38,7 @@ no2 = int(input("enter the second number: "))
 no1, no2 = no2, no1
 print(no1, no2)
 '''
+
 #4 Write a program that will give you the sum of 3 digits
 '''
 no1 = int(input("enter the first number: "))
@@ -44,6 +47,7 @@ no3 = int(input("enter the third number: "))
 
 print(no1+ no2+ no3)
 '''
+
 #5 Write a program that will reverse a four digit number.Also it checks whether the reverse is true.
 '''
 num = input("enter a four digit number: ")
@@ -58,6 +62,7 @@ if num == reverse :
 else :
     print("reverse is false (Not a Palindrome)")
 '''
+
 #6 Write a program that will tell whether the number entered by the user is odd or even.
 '''
 number = int(input("Enter the number: "))
@@ -68,6 +73,7 @@ if number % 2 == 0 :
 else :
     print("the number entered by the user is odd")
 '''
+
 #7 Write a program that will tell whether the given year is a leap year or not.
 '''
 year = int(input("Enter the year: "))
@@ -78,6 +84,7 @@ if year % 4 == 0 or year % 400 == 0 :
 else :
     print("It is not a leap year.")
 '''
+
 #8 Write a program to find the euclidean distance between two coordinates.
 '''
 import math
@@ -91,6 +98,7 @@ distance = math.sqrt(((x2-x1)**2) + ((y2-y1)**2))
 
 print(distance)
 '''
+
 #9 Write a program that take a user input of three angles and will find out whether it can form a triangle or not.
 '''
 angle1 = int(input("enter the first angle: "))
@@ -103,6 +111,7 @@ if (angle1 + angle2 + angle3 == 180) :
 else:
     print("It can not form a triangle")
 '''
+
 #10 Write a program that will take user input of cost price and selling price and determines whether its a loss or a profit
 '''
 buy = int(input("Enter the Cost Price in Rupees: "))
@@ -117,6 +126,7 @@ elif buy > sell:
 else :
     print("Its neither Loss nor Profit")
 '''
+
 #11 Write a program to find the volume of the cylinder. Also find the cost when ,when the cost of 1litre milk is 40Rs.
 '''
 import math
@@ -131,6 +141,7 @@ print(f"{volume:.2f}cm³")
 print(f"after converting volume into litre it give {litre:.2f} litre")
 print(f"The cost of {litre:.2f} litre milk is {milk:.2f}")
 '''
+
 #12 Write  a program that will tell whether the given number is divisible by 3 & 6.
 '''
 n = int(input("Enter the Number: "))
@@ -158,6 +169,7 @@ c = int(input("Enter the Number: "))
 
 print(a**2 + b**2 + c**2)
 '''
+
 #14 Write a program to find the simple interest when the value of principle,rate of interest and time period is given.
 '''
 p = int(input("Enter the value of principle: "))
@@ -167,6 +179,7 @@ t = int(input("Enter the time period: "))
 SI = (p * r * t)/100
 print(SI)
 '''
+
 #15 Write a program that will check whether the number is armstrong number or not.
 '''
 f = int(input("Enter the first Number: "))
@@ -181,6 +194,7 @@ if (num == f**3 + e**3 + d**3 ) :
 else:
     print("The number is not an armstrong number")
 '''
+
 #16 Write a program that will take user input of (4 digits number) and check whether the number is narcissist number or not.
 '''
 x = int(input("Enter a Number: "))
@@ -195,3 +209,39 @@ if (num == w**4 + x**4 + y **4 + z**4) :
 else :
     print("The number is not a narcissist number")
 '''
+
+#17 Write a menu driven program - 1.cm to ft  2.kl to miles  3.usd to inr  4.exit
+'''
+while True:
+
+   print("\nEnter your Choice ")
+   print("1. convert cm to ft")
+   print("2. convert kl to miles")
+   print("3. convert usd to inr")
+   print("4. exit")
+
+   choice = int(input("Enter your choice: "))
+
+
+   if (choice == 1) :
+       cm = int(input("Enter the length in cm: "))
+       ft = cm / 30.48
+       print(f"Length in feet: {ft:.2f} ft" )
+
+   elif (choice == 2):
+       kl = int(input("Enter the distance in kl: "))
+       miles = kl * 0.621371
+       print(f"Distance in miles: {miles:.2f} miles")
+
+   elif (choice == 3) :
+       usd = int(input("Enter the amount in usd: "))
+       inr = usd * 95.16
+       print(f"Amount in Indian currency: {inr:.2f} inr")
+
+   elif (choice == 4) :
+       print("Exit the program. ")
+       break
+   else :
+       print("Try Again")
+'''
+
