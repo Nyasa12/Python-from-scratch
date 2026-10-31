@@ -255,3 +255,12 @@ chick = head - dog
 print(f"The total number of dogs: {dog} \nThe total number of chickens: {chick} ")
 '''
 
+#19 Write a program that will swap numbers
+'''
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+a,b = b,a
+
+print("a=", a)
+print("b=", b)
+'''
