@@ -245,3 +245,13 @@ while True:
        print("Try Again")
 '''
 
+#18 Write a program that will tell the number of dogs and chicken are there when the user will provide the value of total heads and legs.
+'''
+head = int(input("Enter the total number of heads: "))
+legs = int(input("Enter the total number of legs: "))
+
+dog = (legs-(2*head))/ 2
+chick = head - dog
+print(f"The total number of dogs: {dog} \nThe total number of chickens: {chick} ")
+'''
+
