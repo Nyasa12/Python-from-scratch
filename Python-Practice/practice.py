@@ -274,3 +274,19 @@ sum = (n*(n+1))/2
 print(f"The sum of first n numbers: {sum}")
 '''
 
+#21 Write a program that can multiply 2 numbers provided by the user without using the * operator
+'''
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+result = 0
+
+for i in range(abs(b)):
+    result += a
+
+if b < 0:
+    result = -result
+
+print("Multiplication =", result)
+'''
+
